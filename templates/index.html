@@ -1,0 +1,50 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>MD5 Checker | Hash Verification Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    <main class="app-container">
+        <div class="glass-card">
+            <div class="brand-header">
+                <img src="/static/assets/logo.png" alt="MD5 Checker Logo" class="logo" onerror="this.src='https://placehold.co/60x60/1a1a2e/00e5ff?text=MD5'">
+                <div class="title-group">
+                    <h1>MD5 Checker Tool</h1>
+                    <p class="khmer-subtitle">បញ្ចូល MD5 ដើម្បីពិនិត្យទិន្នន័យ</p>
+                </div>
+            </div>
+
+            <div class="search-area">
+                <div class="input-wrapper">
+                    <input type="text" id="md5Input" placeholder="e.g., 5d41402abc4b2a76b9719d911017c592" autocomplete="off" spellcheck="false">
+                </div>
+                <button id="checkBtn" class="neon-button">
+                    <span class="btn-text">Check MD5</span>
+                    <span class="btn-glow"></span>
+                </button>
+            </div>
+
+            <div class="result-container">
+                <div class="result-header">
+                    <span class="result-label">🔍 Response Data</span>
+                    <span id="statusBadge" class="status-badge"></span>
+                </div>
+                <pre id="resultBox" class="json-viewer">{
+  "ready": "Enter an MD5 hash and click the button"
+}</pre>
+            </div>
+
+            <div class="footer-note">
+                <span>⚡ Proxy API via secure backend</span>
+            </div>
+        </div>
+    </main>
+    <script src="/static/script.js"></script>
+</body>
+</html>
