@@ -40,5 +40,4 @@ def check_md5():
     except Exception as e:
         return jsonify({"error": "Internal proxy error", "message": str(e)}), 500
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=False)
+app = Flask(__name__, static_folder='static', template_folder='templates')
