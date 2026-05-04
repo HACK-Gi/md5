@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>MD5 Checker | Payment Detection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,500;14..32,600;14..32,700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="glass-card">
+        <h1>🔐 MD5 Checker Tool</h1>
+        <div style="text-align: center;">
+            <div class="subtitle">បញ្ចូល MD5 ដើម្បីពិនិត្យទិន្នន័យ</div>
+        </div>
+
+        <div class="input-group">
+            <label>📀 MD5 Hash</label>
+            <input type="text" id="md5Input" placeholder="e.g., 5d41402abc4b2a76b9719d911017c592" autocomplete="off">
+        </div>
+
+        <button id="checkBtn">🔍 Check MD5</button>
+
+        <div id="resultContainer" class="result-area">
+            <div id="statusMsg" class="status-message">✨ បញ្ចូល MD5 ហើយចុចពិនិត្យ</div>
+            <div id="jsonPreview" class="json-view">{
+  "waiting": "រង់ចាំសំណើ..."
+}</div>
+            <div id="unlockZone" class="unlock-feature hidden">🔓 លក្ខណៈពិសេសបានដោះសោ! ✅ Premium Access Granted</div>
+            <div id="loadingIndicator" class="loading-indicator hidden">
+                <div class="loader"></div>
+                <span>កំពុងពិនិត្យ...</span>
+            </div>
+        </div>
+        <div class="footer">Proxy API · Real-time Payment Status</div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
